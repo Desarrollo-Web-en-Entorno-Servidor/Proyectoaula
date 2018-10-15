@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario Complejo.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/formularioComplejoCss.css">
+    </head>
+    <body>
+        <div id="Titulo">Formulario Complejo Servlet.</div>
+        <form id="form" name="form" method="post" action="Formulariocomplejo">
+        <fieldset id="formulario1">
+            <legend>Datos Personales: </legend>
+            <label for ="usuario">Usuario: </label>
+            <input type="text" id="usuario" placeholder="Usuario:">
+            <br>
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="pass" pattern=".{8,}">
+            <br>
+            <br>
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" min ="22" max="60">
+            <br>
+            <br>
+        </fieldset>
+            <fieldset id="formulario2">
+                <legend>Otros datos: </legend>
+                   
+                    <label for="Soltero">Soltero/a </label>
+                    <input type="radio" name ="estado" value="s" checked="checked">
+                    <label for="Casado">Casado/a </label>
+                    <input type="radio" name ="estado" value="c">
+                    <label for="Viudo">Viudo/a </label>
+                    <input type="radio" name ="estado" value="v">
+                    <label for="Divorciado">Divorciado/a </label>
+                    <input type="radio" name ="estado" value="s">
+                    <br>
+                    <br>
+            <label for="aficiones">Aficiones: (uno o varios, CTRL)</label>
+            <select id="Aficiones" name="Aficiones" multiple="multiple" size="6">
+                <option value="Deportes">Deportes</option>
+                <option value="Música">Música</option>
+                <option value="Informática">Informática</option>
+                <option value="Viajes">Viajes</option>
+                <option value="Tiendas">Tiendas</option>
+                <option value="Juegos">Juegos</option>
+            </select>
+            <br>
+            <br>
+            <label for="comentarios">Comentarios: </label>
+            <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+            
+            </fieldset>
+            
+            <input type="submit" name="Submit" id="button" value="Enviar Datos"/>
+    </body>
+</html>

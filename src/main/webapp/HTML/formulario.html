@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/formularioCss.css">
+    </head>
+    <body>
+        <div id="Titulo">Formulario Servlet.</div>
+        <br>
+        <br>
+        <form id="form" name="form" method="post" action="../Formulario">
+        <fieldset id="formulario">
+            <legend>Datos Personales</legend>
+                <br>
+                <br>
+                <label>Nombre </label><input type="text" name="nombre" size="30" maxlength="100" />
+                <br>
+                <br>
+                <label>Correo Electr&oacute;nico</label><input type="text" name="correo" size="30" maxlength="100"/>
+                <br>
+                <br>
+                <label for="chequo">Pulsa y cliquea. </label>
+                <input type="checkbox" name ="chequeo">
+                <br>
+                <br>
+                <input type="submit" name="Submit" id="button" value="Enviar Datos"/>
+                <br>
+                <br>
+        </fieldset>
+        </form>
+    </body>
+</html>
